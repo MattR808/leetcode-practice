@@ -14,4 +14,14 @@ class Solution(object):
 
         return result
     
+    def twoSum(self, nums, target):
+        nums_map = dict()
+        for i in range(len(nums)):
+            if target - nums[i] in nums_map:
+                return [nums_map[target-nums[i]], i]
+            else:
+                nums_map.update({nums[i] : i})
+
+
+
         
