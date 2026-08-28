@@ -1,3 +1,5 @@
+import heapq
+
 class Solution(object):
     def topKFrequent1(self, nums, k):
         """
@@ -26,7 +28,7 @@ class Solution(object):
 
         return result
 
-    import heapq
+    
 
     def topKFrequent(self, nums, k):
         counts = {}
